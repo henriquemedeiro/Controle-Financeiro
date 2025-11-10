@@ -1,0 +1,56 @@
+/* src/App.css */
+body {
+  background-color: #f8f9fa;
+}
+
+.card-header {
+  background-color: #0d6efd; /* Bootstrap's primary blue */
+  color: white;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+@media (max-width: 767.98px) {
+  .table {
+    font-size: 0.875rem; /* 14px if base is 16px */
+  }
+
+  .table .btn-sm {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    border: 1px solid #dee2e6 !important;
+    box-shadow: none !important;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+}
